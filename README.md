@@ -9,6 +9,7 @@ child processes.
 
 For the purposes of performance evaluation, the PCBs are simplified as
 follows:
+
 • All PCBs are implemented as an array of size n.
 • Each process is referred to by the PCB index, 0 through n-1.
 • Each PCB is a structure consisting of only the two fields:
