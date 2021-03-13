@@ -27,20 +27,20 @@ The necessary functions are simplified as follows:
 The function creates a new child process PCB[q] of process PCB[p] by
 performing the following tasks:
 
-  o allocate a free PCB[q]
+  > allocate a free PCB[q]
   
-  o record the parent's index, p, in PCB[q]
+  > record the parent's index, p, in PCB[q]
   
-  o initialize the list of children of PCB[q] as empty
+  > initialize the list of children of PCB[q] as empty
   
-  o create a new link containing the child's index q and appends the
+  > create a new link containing the child's index q and appends the
 link to the linked list of PCB[p]
 
 • destroy(p) represents the destroy function executed by process PCB[p].
 The function recursively destroys all descendent processes (child,
 grandchild, etc.) of process PCB[p] by performing the following tasks:
 
-  o for each element q on the linked list of children of PCB[p]
+  > for each element q on the linked list of children of PCB[p]
   
     ▪ destroy(q) /* recursively destroy all progenies */
     
